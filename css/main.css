@@ -1,0 +1,36 @@
+body{
+    background-color: #F4D35E;
+}
+
+
+nav{
+    width: 40%;
+    height: 100px;
+   background-color: #083D77;
+}
+
+.navab{
+    color: #F4D35E;
+    
+}
+
+.kleur1{
+    width: 100px;
+    height: 100px;
+    background-color: #083D77;
+}
+.kleur2{
+    width: 100px;
+    height: 100px;
+    background-color: #EBEBD3;
+}
+.kleur3{
+    width: 100px;
+    height: 100px;
+    background-color: #DA4167;
+}
+.kleur4{
+    width: 100px;
+    height: 100px;
+    background-color: #F4D35E;
+}
