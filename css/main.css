@@ -1,46 +1,49 @@
-
-body{
+body {
     background-color: #768948;
 }
 
 
-nav{
+nav {
     display: flex;
     margin-left: 25%;
     width: 50%;
     height: 100px;
-   background-color: #FB8B24;
-   align-content: center;
-   border-radius: 100px;
+    background-color: #FB8B24;
+    align-content: center;
+    border-radius: 100px;
 }
 
-.navab{
+.navab {
     color: #F4D35E;
     margin-left: 10%;
     margin-top: 35px;
 }
 
-.kleur1{
+.kleur1 {
     width: 100px;
     height: 100px;
     background-color: #FB8B24;
 }
-.kleur2{
+
+.kleur2 {
     width: 100px;
     height: 100px;
     background-color: #768948;
 }
-.kleur3{
+
+.kleur3 {
     width: 100px;
     height: 100px;
     background-color: #607744;
 }
-.kleur4{
+
+.kleur4 {
     width: 100px;
     height: 100px;
-    background-color:  #34623F;
+    background-color: #34623F;
 }
-.kleur5{
+
+.kleur5 {
     width: 100px;
     height: 100px;
     background-color: #1e2f23;
