@@ -30,6 +30,28 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--sub-background); 
+    font-family: 'Merriweather', serif;
+    padding-bottom: 10px;
+    
+}
+a{
+    color: var(--white);
+}
 .logo{
     width: 20%;
     height: 100%;
@@ -48,7 +70,7 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
+    
 }
 .navigatie a{
     text-decoration: none;
@@ -79,13 +101,7 @@ main{
     align-items: center;
 
 }
-section{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+
 .card{
     background-color: var(--sub-background);
 
@@ -108,4 +124,18 @@ section{
 .card h3{
     font-size: 18pt;
     font-weight: 200;
+}
+.skip-nav-bar{
+    padding-left: 5px;
+    border-radius: 2px;
+    left: 5px;
+    background-color: var(--white);
+    color: var(--background);
+    text-decoration: none;
+    position: absolute;
+    transform: translateY(-255%);
+    transition: transform 325ms ease-in;
+}
+.skip-nav-bar:focus{
+    transform: translateY(0);
 }
