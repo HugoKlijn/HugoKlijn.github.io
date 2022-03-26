@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/submain.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Outfit:wght@200;400;600&family=Roboto+Condensed&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Outfit:wght@200;400;600&family=Roboto+Condensed&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio || Hugo</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="logo">
-            <h2>HUGO</h2>
-        </div>
-        <div class="navigatie">
-            <a href="index.html">HOME</a>
-            <a href="work.html">WORK</a>
-            <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
+      <div class="logo">
+        <h2>HUGO</h2>
+      </div>
+      <div class="navigatie">
+        <a href="index.html">HOME</a>
+        <a href="work.html">WORK</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
     </nav>
     <main>
-        <div class="welcome">
-            <h1 class="non-serif">
-                Contact
-            </h1>
-            <section>
-                <div class="card">
-                    <img src="img/work1.jpg">
-                    <h3>CONTACT</h3>
-                    <strong></strong>
-                    <a href="mailto:1197254@student.roc-nijmegen.nl"> send mail</a>
-                </div>              
-            </section>
+      <div class="welcome">
+        <section>
+          <button type="button" class="collapsible">contact</button>
+          <div class="contact">
+            <form action="action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
 
-        </div>
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+            <script src="main.js"></script>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
