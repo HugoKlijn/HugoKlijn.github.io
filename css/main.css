@@ -29,6 +29,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 80vh;
 }
 
 footer {
@@ -39,6 +40,20 @@ footer {
   color: var(--sub-background);
   font-family: "Merriweather", serif;
   padding-bottom: 10px;
+}
+
+b {
+  color: var(--sub-background);
+}
+
+.welcome {
+  width: 80%;
+  height: 100vh;
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .about {
@@ -93,6 +108,7 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  font-weight: bolder;
 }
 
 .navigatie {
@@ -103,6 +119,7 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  font-weight: 400;
 }
 
 .navigatie a {
@@ -124,22 +141,12 @@ a {
   letter-spacing: 5px;
 }
 
-.welcome {
-  width: 80%;
-  height: 100vh;
-  row-gap: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .card {
   background-color: var(--sub-background);
 
   border-radius: 15px;
   padding: 15px;
-  height: 450px;
+  height: 400px;
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -180,53 +187,79 @@ a {
 input[type="text"],
 select,
 textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  color: var(--background);
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type="submit"] {
   background-color: var(--sub-background);
-  color: white;
+  color: var(--white);
   padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  border-color: var(--background);
+  border-radius: 5px;
+  border-color: var(--green);
   cursor: pointer;
+  border-bottom: var(--green);
+  border-right: var(--green);
+  border-style: solid;
 }
 
 input[type="submit"]:hover {
+  color: var(--white);
   background-color: var(--background);
 }
 
+textarea[for="subject"] {
+  width: 100px;
+}
+
+label {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
 .collapsible {
-  background-color: var(--sub-background);
+  background-color: var(--green);
   color: var(--white);
   cursor: pointer;
   border-radius: 100%;
   width: 150px;
   height: 150px;
-  border: none;
+  border-style: solid;
+  border-color: var(--sub-background);
+  border-width: 3px;
+
   text-align: center;
   outline: none;
   font-size: 30px;
+  font-weight: 900;
   margin-top: 30px;
   margin-bottom: 10px;
   transition: 0.5s ease-out;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  padding: auto;
 }
 
 .active,
 .collapsible:hover {
-  background-color: var(--green);
+  background-color: var(--sub-background);
   transition: all 0.5s;
+  border-style: solid;
+  border-color: var(--green);
+  border-width: 3px;
 }
 
 .contact {
+  color: white;
   margin-top: 30px;
   border-radius: 10px;
   background-color: var(--sub-background);
@@ -235,11 +268,4 @@ input[type="submit"]:hover {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s ease-out;
-}
-
-.collapsible:after {
-  content: "\🠒";
-  font-size: 25px;
-  color: var(--white);
-  margin-left: 5px;
 }
